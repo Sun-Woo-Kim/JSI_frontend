@@ -6,15 +6,21 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "bootstrap": "^4.3.1",
+    "next": "^9.0.3",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.10",
     "react-dom": "^16.8.6",
     "react-lines-ellipsis": "^0.14.1",
     "react-scripts": "3.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "react_start": "react-scripts start",
+    "react_build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "yarn build",
@@ -41,6 +47,6 @@
   },
   "homepage": "http://Sun-Woo-Kim.github.io/JSI_frontend",
   "devDependencies": {
-    "gh-pages": "^2.0.1"
+    "gh-pages": "^2.1.0"
   }
 }
