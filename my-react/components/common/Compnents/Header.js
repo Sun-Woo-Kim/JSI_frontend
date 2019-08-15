@@ -11,6 +11,7 @@ export default function CommonHeader() {
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="/meet">Meet</Nav.Link>
             <Nav.Link href="/meet/detail">Meet Detail</Nav.Link>
+            <Nav.Link href="/meet/open">Meet Open</Nav.Link>
             <NavDropdown
               title="Dropdown"
               id="basic-nav-dropdown"

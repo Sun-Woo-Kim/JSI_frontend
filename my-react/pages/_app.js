@@ -1,6 +1,9 @@
 import React from "react";
 import App, { Container } from "next/app";
 import { Header, Footer } from "../components/common/Manager";
+
+// TextEditor CSS
+import "react-quill/dist/quill.snow.css";
 class Layout extends React.Component {
   render() {
     const { children } = this.props;
@@ -25,12 +28,7 @@ export default class MyApp extends App {
     const { Component, pageProps } = this.props;
     return (
       <Container>
-        <link
-          rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-          crossOrigin="anonymous"
-        />
+        <LinkCSS />
         <Header />
         <Layout>
           <Component {...pageProps} />
@@ -39,4 +37,17 @@ export default class MyApp extends App {
       </Container>
     );
   }
+}
+
+function LinkCSS() {
+  return (
+    <div>
+      <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossOrigin="anonymous"
+      />
+    </div>
+  );
 }

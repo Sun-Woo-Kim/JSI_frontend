@@ -1,9 +1,19 @@
+import { Container, Row } from "react-bootstrap";
+
 import MeetHeader from "../../components/meet/MeetHeader";
+import MeetDetail from "../../components/meet/MeetDetail";
 
 export default function Detail() {
   return (
     <div>
-      <MeetHeader />
+      <Container>
+        <Row>
+          <MeetHeader />
+        </Row>
+        <Row>
+          <MeetDetail />
+        </Row>
+      </Container>
     </div>
   );
 }
