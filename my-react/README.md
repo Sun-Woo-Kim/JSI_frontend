@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# https://sun-woo-kim.github.io/JSI_frontend
+
 ## Available Scripts
 
 In the project directory, you can run:
